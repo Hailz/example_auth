@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Auth App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <% include partials/alerts %>
+        <%- body %>
+        <STRONG>User: </STRONG> <%- JSON.stringify(currentUser) %>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <a href="/" class="btn btn-info">Hoooome</a>
+        <a href="/auth/login" class="btn btn-primary">Login</a>
+        <a href="/auth/signup" class="btn btn-success">Sign up</a>
+        <a href="/auth/logout" class="btn btn-warning">Logout</a>
+        <a href="/profile" class="btn btn-default">Profile</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
